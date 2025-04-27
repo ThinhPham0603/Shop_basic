@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Speech-to-Text + RSA</title>
+  <script src="/static/main.js" defer></script>
+  <style>
+    body { font-family: sans-serif; margin: 2rem; }
+    button, input { margin: 0.5rem 0; padding: 0.6rem 1.2rem; }
+    .field { margin-top: 1rem; }
+    label { display: block; margin-bottom: 0.3rem; font-weight: bold; }
+    input[type="text"] { width: 100%; padding: 0.5rem; font-size: 1rem; }
+  </style>
+</head>
+<body>
+
+<h1>🎤 Speech-to-Text + RSA</h1>
+
+<button id="recordBtn">Record</button>
+<button id="stopBtn" disabled>Stop</button>
+<input type="file" id="fileInput" accept="audio/wav">
+
+<div class="field">
+  <label>Plain Text</label>
+  <input type="text" id="plain" readonly>
+</div>
+
+<div class="field">
+  <label>Encrypted (Base64)</label>
+  <input type="text" id="encrypted" readonly>
+</div>
+
+<div class="field">
+  <label>Decrypted Text</label>
+  <input type="text" id="decrypted" readonly>
+</div>
+
+</body>
+</html>

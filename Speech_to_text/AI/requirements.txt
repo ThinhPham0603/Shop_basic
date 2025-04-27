@@ -1,0 +1,7 @@
+flask
+cryptography
+librosa
+numpy
+torch
+scikit-learn
+hmmlearn
